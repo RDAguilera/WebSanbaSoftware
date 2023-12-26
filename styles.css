@@ -1,0 +1,140 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgba(87, 101, 42, 0.1);
+  color:  rgba(87, 101, 42);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;  
+  
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(87, 101, 42);
+  margin: 0 15px;
+  font-size:medium;
+  
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  margin: 20px 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin-top: 0;
+}
+
+.product-card p {
+  margin-bottom: 20px;
+}
+
+.product-card a {
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.product-list {
+  margin-top: 30px;
+}
+
+.product-list h4 {
+  margin-bottom: 10px;
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  margin-bottom: 5px;
+}
+
+.product-list a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.product-list a:hover {
+  color: #666;
+}
+
+
+
